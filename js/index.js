@@ -217,7 +217,7 @@ function setCreditsText(i, fade){
 	if (courses[courseId][i].credits == 1){
 		text = " crédito)";
     text = "(" + courses[courseId][i].credits + text;
-	} else if (courses[courseId][i].credits == 0){
+	} else if (courses[courseId][i].credits == 0 || courses[courseId][i].workload > 200){
   		text = " horas)";
       text = "(" + courses[courseId][i].workload + text;
   } else {
